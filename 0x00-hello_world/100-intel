@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S  -march=INTEL main.s
+gcc -S -msmi=INTEL
