@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * 
+ * main - entry point 
  * Description: A C program that calculates the size of various types
  *
  *Return: Always 0 (Success)
