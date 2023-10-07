@@ -3,9 +3,13 @@
 #include <stdio.h>
 
 /**
- *This program will assign a random number 
- * the number is sored in variable n each time it is executed
+ * main - Entry pointk
+ *
+ * Description: A C program that prints a random number
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int n; 
