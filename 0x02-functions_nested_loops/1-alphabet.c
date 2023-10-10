@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* main - Entry pointk
+* print_alphabet - Entry pointk
 *
 * Description : a function that prints the alphabet, in lowercase
 *
-* Return: Always 0 (Success)
+* No Return
 */
 
 void print_alphabet(void)
