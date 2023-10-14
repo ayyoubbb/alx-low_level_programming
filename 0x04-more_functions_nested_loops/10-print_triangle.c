@@ -1,26 +1,36 @@
-#include  "main.h"
+ #include "main.h"
 
 /**
- * print_triangle - prints a triangle
- * @size : it takes an integer
- *
- * Return : No return
- */
+* print_triangle - prints a triangle
+* @size: it takes an integer
+*
+* Return: No return
+*/
 
 void print_triangle(int size)
 {
-	int row, sep, space;
+	int row, space, hash;
+
+	if (size <= 0)
+	{
+		_putchar('\n');
+		return;
+	}
 
 	for (row = 0; row < size; row++)
 	{
-		for (space = size - row; space > 0; space--)
+		for (space = size - row - 1; space > 0; space--)
 		{
 			_putchar(' ');
 		}
-		for (sep = 0; sep < row; sep++)
+
+		for (hash = 0; hash <= row; hash++)
 		{
 			_putchar('#');
 		}
+
 		_putchar('\n');
 	}
 }
+
+
