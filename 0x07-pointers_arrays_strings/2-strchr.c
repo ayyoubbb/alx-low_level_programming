@@ -1,8 +1,12 @@
 #include "main.h"
 
 /**
- * *strchar - 
+ * *_strchr -  a function that locates a character in a string.
+ * @s: a pointer to a character.
+ * @c: a character.
+ * Return: Returns a pointer or null.
  */
+
 char *_strchr(char *s, char c)
 {
 	while (*s != '\0')
