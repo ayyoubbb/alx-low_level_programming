@@ -1,8 +1,26 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * is_palindrome -a function that returns 0 or 1
+ * is_palindrome_helper - a function helper to is_palindrome.
+ * @start: a pointer to a character 1.
+ * @end: a pointer to a character 2.
+ * Return: return one ro zero.
+ */
+int is_palindrome_helper(char *start, char *end)
+{
+	if (start >= end)
+	{
+		return (1);
+	}
+	if (*start != *end)
+	{
+		return (0);
+	}
+	return (is_palindrome_helper(start + 1, end - 1));
+}
+
+/**
+ * is_palindrome -a function that returns 0 or 1.
  * @s: an integer to a parameter.
  * Return: return either one or zero.
  */
@@ -10,22 +28,12 @@
 int is_palindrome(char *s)
 {
 	int length = 0;
-	char *start = s;
-	int i, j;
+	char *temp = s;
 
-	while (*s != '\0')
+	while (*temp != '\0')
 	{
 		length++;
-		s++;
+		temp++;
 	}
-	s = start;
-
-	for (i = 0, j = length - 1; i < j; i++, j--)
-	{
-		if (s[i] != s[j])
-		{
-			return (0);
-		}
-	}
-	return (1);
+	return (is_palindrome_helper(s, s + length - 1));
 }
