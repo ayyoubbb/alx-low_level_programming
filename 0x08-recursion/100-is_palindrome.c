@@ -27,13 +27,12 @@ int is_palindrome_helper(char *start, char *end)
 
 int is_palindrome(char *s)
 {
-	int length = 0;
-	char *temp = s;
+	char *end = s;
 
-	while (*temp != '\0')
+	while (*end)
 	{
-		length++;
-		temp++;
+		end++;
 	}
-	return (is_palindrome_helper(s, s + length - 1));
+	end--;
+	return (is_palindrome_helper(s, end));
 }
