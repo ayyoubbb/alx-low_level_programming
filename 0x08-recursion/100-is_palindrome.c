@@ -9,8 +9,16 @@
 
 int is_palindrome(char *s)
 {
-	int length = strlen(s);
+	int length = 0;
+	char *start = s;
 	int i, j;
+
+	while (*s != '\0')
+	{
+		length++;
+		s++;
+	}
+	s = start;
 
 	for (i = 0, j = length - 1; i < j; i++, j--)
 	{
