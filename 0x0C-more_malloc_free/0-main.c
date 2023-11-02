@@ -8,8 +8,7 @@
     *
      * Return: Always 0.
       */
-
-int main()
+int main(void)
 {
 	char *c;
 	int *i;
@@ -20,7 +19,7 @@ int main()
 	printf("%p\n", (void *)c);
 	i = malloc_checked(sizeof(int) * 402);
 	printf("%p\n", (void *)i);
-	f = malloc_checked(sizeof(float) *  100000000);
+	f = malloc_checked(sizeof(float) * 100000000);
 	printf("%p\n", (void *)f);
 	d = malloc_checked(INT_MAX);
 	printf("%p\n", (void *)d);
