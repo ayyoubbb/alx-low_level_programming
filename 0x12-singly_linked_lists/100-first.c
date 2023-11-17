@@ -3,9 +3,9 @@
 void at_first(void)__attribute__((constructor));
 
 /**
- *  * at_firest - prints a statement before the main function is executed.
- *   * Return: return(void)
- *    */
+ * at_first - prints a statement before the main function is executed.
+ * Return: return(void)
+ */
 
 void at_first(void)
 {
