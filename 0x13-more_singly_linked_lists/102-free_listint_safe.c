@@ -1,17 +1,17 @@
 #include "lists.h"
 
 /**
- * find_listint_loop_f1 - Finds the starting node of a loop in a linked list 
+ * find_listint_loop_f1 - Finds the starting node of a loop
  * @head: A pointer to the head of the linked list.
- *  
- * Return: If a loop is found, returns a pointer to the starting node of the loop.
- *           
+ *
+ * Return: If a loop is found, returns a pointer.
+ *
  */
 
 listint_t *find_listint_loop_f1(listint_t *head)
 {
 	listint_t *ptr, *end;
-	 
+
 	if (head == NULL)
 		return (NULL);
 
@@ -59,7 +59,7 @@ size_t free_listint_safe(listint_t **h)
 			free((*h)->next);
 			loop = 0;
 		}
-		free(* h);
+		free(*h);
 	}
 	*h = NULL;
 	return (len);
