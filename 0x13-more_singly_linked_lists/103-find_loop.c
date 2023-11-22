@@ -4,9 +4,8 @@
  * find_listint_loop - Detects the starting node of a loop in a linked list.
  * @head: A pointer to the head of the linked list.
  *
- * Return: If a loop is found, returns a pointer        
+ * Return: If a loop is found, returns a pointer
  */
-
 
 listint_t *find_listint_loop(listint_t *head)
 {
