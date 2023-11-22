@@ -5,8 +5,8 @@
  * @head: a pointer to a pointer to listint_t
  * @n: a const variable
  * Return: return the number of nodes
- */ 
-
+ *
+ */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *first_node = malloc(sizeof(listint_t));
