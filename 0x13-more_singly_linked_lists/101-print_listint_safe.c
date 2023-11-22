@@ -1,17 +1,17 @@
 #include "lists.h"
 
 /**
- * _p - Reallocates memory for an array of pointers to a linked list.
+ * _p - Reallocates memory for an array of pointers to a linked list
  * @list: A pointer to an array of pointers to a linked list.
- * @size: The current size of the array.
- * @new: A pointer to the new listint_t element to be added 
- * Return: A pointer to the reallocated array with the new element.
- */ 
-
+ * @size: The current size of the array
+ * @new: A pointer to the new listint_t element to be added
+ * Return: A pointer to the reallocated array with the new element
+ */
 
 const listint_t **_p(const listint_t **list, size_t size, const listint_t *new)
 {
-	const listint_t **listint;  
+	const listint_t **listint;
+
 	size_t a;
 
 	listint = malloc(size * sizeof(listint_t *));
