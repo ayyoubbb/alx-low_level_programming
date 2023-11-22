@@ -2,9 +2,9 @@
 
 /**
  * delete_nodeint_at_index - Deletes a node at a given position in a linked.
- * @head: A pointer to the head of the linked list.
- * @index: The index of the node to be deleted 
- * Return: If the deletion is successful, returns 1. 
+ * @head: A pointer to the head of the linked list
+ * @index: The index of the node to be deleted
+ * Return: If the deletion is successful, returns 1
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
